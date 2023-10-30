@@ -1,0 +1,381 @@
+.body {
+  height: 100vh;
+
+  margin: 0 auto;
+  width: 90%;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+/*--------------------------- Navbar styling Start ---------------------------*/
+.navbar {
+  padding-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.lgo {
+  grid-column: 1/3;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.lgo img {
+  height: 4rem;
+  width: 14rem;
+  object-fit: cover;
+}
+.mainMenu {
+  grid-column: 3/11;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  align-content: center;
+  justify-items: right;
+  column-gap: 1rem;
+}
+.offset {
+  grid-column: 1/7;
+}
+.mainMenu p {
+  font-size: 1.5rem;
+}
+.hamburger {
+  display: none;
+}
+.subMenu {
+  grid-column: 12/-1;
+}
+.subMenu p {
+  background-color: #ffd400;
+  width: 6rem;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  justify-self: center;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+/*--------------------------- Content styling Start --------------------------*/
+.content {
+  grid-column: 1 /-1;
+
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+}
+/*--------------------------- Content Header styling Start--------------------*/
+.contentHeader {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.contentHeaderText {
+  align-self: center;
+  font-size: 2.25rem;
+  padding: 2rem;
+}
+.contentHeaderText h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+.contentHeaderText p:last-of-type {
+  font-size: 1.5rem;
+}
+/*--------------------------- Content About styling Start--------------------*/
+.contentAbout {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-content: center;
+  align-items: center;
+}
+.aboutImg img {
+  height: 32.125rem;
+}
+.aboutTextTag {
+  font-size: 1.2rem;
+  background-color: #ffd400;
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  margin: 0;
+}
+.aboutTextHeading {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.aboutTextTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.aboutTextDescription {
+  font-size: 1.5rem;
+  color: #a49090;
+  line-height: 3rem;
+}
+/*--------------------------- Content Service styling Start-------------------*/
+.contentService h1 {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+.serviceCard {
+  margin: 5rem 0;
+}
+.serviceCard ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+.serviceCard li {
+  width: 19.19rem;
+  height: 10.06rem;
+}
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.cardDescription {
+  font-size: 1rem;
+  color: #a49090;
+  width: 19.1rem;
+  height: 3rem;
+  display: inline-block;
+}
+/*--------------------------- Content Portfolio styling Start-----------------*/
+.contentPortfolio {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.portfolioText {
+  width: 80%;
+}
+.portfolioText h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.portfolioTitle {
+  font-size: 1.5rem;
+}
+.portfolioDescription {
+  font-size: 1.5rem;
+  color: #857474;
+  padding: 1.7rem 0;
+}
+.portfolioButton {
+  font-size: 0.75rem;
+  background-color: #ffd400;
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+}
+/*--------------------------- Content Team styling Start-----------------*/
+.contentTeam h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.contentTeam p {
+  font-size: 1.25rem;
+}
+/*--------------------------- Content Client styling Start-----------------*/
+.ClientSlideCard {
+  padding: 1rem 3rem;
+}
+.clientContainer h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.clientContainer p {
+  font-size: 1.25rem;
+
+  line-height: 2.5rem;
+}
+.ClientSlideCard hr {
+  width: 35.75rem;
+  height: 1px;
+  background-color: #676767;
+}
+.ClientSlideCard p {
+  font-size: 1.5rem;
+}
+
+/*--------------------------- Content Client styling Start-----------------*/
+.contactContainer {
+  height: 42rem;
+}
+.contactContent {
+  background-color: hwb(0 96% 4%);
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: 40.4rem;
+  margin: 2rem;
+  padding: 2rem 0;
+}
+.contactText {
+  display: grid;
+  justify-self: center;
+  align-self: center;
+}
+.contactText h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.contactText p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #646464;
+}
+.contactText input {
+  width: 52.3rem;
+  height: 5.74rem;
+  box-sizing: border-box;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  padding: 0 2rem;
+}
+.contactText input:last-of-type {
+  width: 52.3rem;
+  height: 11.74rem;
+}
+.contactText p:last-of-type {
+  background-color: #ffd400;
+  width: 7rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+.contactContent img {
+  height: 38rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/*--------------------------- Footer styling Start-----------------*/
+
+.footerContainer {
+  background-color: #fffbe6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 5rem;
+}
+.footerContact img {
+  width: 7.4rem;
+  height: 2.1rem;
+  margin: 2rem 0;
+}
+.footerContact ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 1rem;
+}
+.footerContact li {
+  display: grid;
+  grid-template-columns: 2rem auto;
+  column-gap: 0.75rem;
+}
+.fa-solid {
+  color: #ffd400;
+}
+.social ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  padding: 0;
+}
+.social li {
+  border-right: 2px solid black;
+}
+
+/*--------------------------- Media query for Phone--------------------*/
+
+@media only screen and (max-width: 768px) {
+  .body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .content {
+    padding-left: 1.5rem;
+  }
+  .lgo {
+    width: 10rem;
+    object-fit: cover;
+  }
+  .navbar {
+    width: auto;
+    gap: 9rem;
+    margin: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #ffd400;
+  }
+  .mainMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    right: 2.6rem;
+    top: 4.5rem;
+    background-color: hsl(50, 84%, 83%);
+    padding: 0 1.5rem;
+    border-radius: 1rem;
+    transition: 0.3s ease-in-out;
+  }
+  .subMenu {
+    display: none;
+  }
+  .hamburger {
+    display: grid;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+  .active {
+    right: -10rem;
+  }
+  .hamburger .fa-solid {
+    width: 15rem;
+    color: black;
+    display: inline;
+    text-align: right;
+  }
+  .contentHeader {
+    width: 45rem;
+    grid-template-columns: 1fr;
+    margin-top: 6rem;
+  }
+  .contentHeaderText {
+    display: inline-block;
+    align-self: center;
+    font-size: 1.9rem;
+    padding: 2rem;
+  }
+
+  .contentHeaderText h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+  .contentAbout {
+    grid-template-columns: 1fr;
+  }
+  .aboutText {
+    width: 38rem;
+  }
+  .serviceCard ul {
+    width: 38rem;
+    gap: 1rem 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contentPortfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 77rem;
+  }
+  .portfolioText {
+    width: 50%;
+  }
+}
